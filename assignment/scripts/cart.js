@@ -11,6 +11,7 @@ function addItem(item) {
   return true;
 }
 //Need double check if you need to have a return false;
+
 //checking if the function is working as intended
 console.log(`Basket is ${basket}`);
 console.log('Adding apples', addItem('apples'));
@@ -19,9 +20,16 @@ console.log(`Basket is ${basket}`);
 console.log('Adding oranges', addItem('oranges'));
 console.log(`Basket is now ${basket}`);
 //Is this actually adding it to the global variable basket? Go back and check this
+//Adding two different things into the basket to test if another object
+//getting added to the global variable will work.
 
-//#3 List Items function with a loop
+//#3 List Items function with a loop. (Looping over items in the basket (apples and oranges))
 function listItems() {
-  for (let item of basket) {
+  for (let i of basket) {
+   //Had a console.log inside the function but it didn't seem to affect anything so I removed it
+   //console.log(basket); is what I had inside before.
   }
 }
+console.log(`Basket is ${basket}`);
+
+//#4 Creating a function that is called empty to empty the global variable basket
