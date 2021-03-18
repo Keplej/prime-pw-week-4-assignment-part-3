@@ -7,21 +7,21 @@ let basket = [];
 
 //#2 function addItem and adding it to the global variable
 function addItem(item) {
-  console.log(item);
   basket.push(item);
   return true;
 }
 //Need double check if you need to have a return false;
 //checking if the function is working as intended
-addItem('item 1');
-addItem('Item 2');
-addItem('12');
-addItem();
+console.log(`Basket is ${basket}`);
+console.log('Adding apples', addItem('apples'));
+console.log(`Basket is now ${basket}`);
+console.log(`Basket is ${basket}`);
+console.log('Adding oranges', addItem('oranges'));
+console.log(`Basket is now ${basket}`);
 //Is this actually adding it to the global variable basket? Go back and check this
 
 //#3 List Items function with a loop
-function listItems(basket) {
-  for (let i = 0; i < basket.length; i++) {
-    console.log(basket[i]);
+function listItems() {
+  for (let item of basket) {
   }
 }
