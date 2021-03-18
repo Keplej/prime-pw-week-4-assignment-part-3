@@ -32,4 +32,10 @@ function listItems() {
 }
 console.log(`Basket is ${basket}`);
 
-//#4 Creating a function that is called empty to empty the global variable basket
+//#4 Creating a function that is called empty to empty the global variable basket of apple and orange
+function empty() {
+  basket = [];
+}
+console.log(empty());
+
+//not sure if this is correctly done. Not sure if you have to use console.log(empty());
