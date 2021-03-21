@@ -39,3 +39,24 @@ function empty() {
 console.log(empty());
 
 //not sure if this is correctly done. Not sure if you have to use console.log(empty());
+
+
+//STRETCH GOALS
+
+//#1 global const
+const maxItems = 5;
+
+//#2 function called isFull
+function isFull(items) {
+  for (let i = 0; i < items.length; i++) {
+    if (items <= maxItems) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+}
+
+console.log(isFull([7]));
+
+//#3 
